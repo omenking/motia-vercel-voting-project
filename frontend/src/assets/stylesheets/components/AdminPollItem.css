@@ -1,0 +1,7 @@
+.admin_poll_item {
+  .actions_bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}

@@ -1,0 +1,67 @@
+  body[location='polls_show'] {
+  article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 40px;
+  }
+  .poll {
+    padding: 64px;
+    border-radius: 16px;
+    border: solid 2px rgb(200,200,200);
+    background: #fff;
+    max-width: 600px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    .name {
+      font-size: 20px;
+    }
+  }
+  .choices {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    .choice_wrap {
+      display: flex;
+      flex-direction: row;
+      .choice {
+        flex-grow: 1
+      }
+      .bttn {
+        display: flex;
+        border: solid 1px rgb(180,180,180);
+        border-left: none;
+        border-radius: 0px !important;
+        justify-content: center;
+        align-items: center;
+        svg {
+          width: 24px;
+          height: 24px;
+        }
+      }
+    }
+    .choice {
+      border: solid 1px rgb(180,180,180);
+      padding: 8px;
+      position: relative;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      .name, .count {
+        position: relative;
+        z-index: 2;
+      }
+      .bar {
+        position: absolute;
+        z-index: 1;
+        top: 0px;
+        left: 0px;
+        height: 100%;
+        width: 50%;
+        background: rgb(200,230,230)
+      }
+    }
+  }
+}

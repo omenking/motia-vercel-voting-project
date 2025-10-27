@@ -1,0 +1,76 @@
+body[location="polls_form"] {
+  .field_errors {
+    color: rgb(200,0,0);
+    font-weight: 600;
+  }
+  .submit {
+    padding: 16px;
+    display: flex;
+    input[type='submit'] {
+      cursor: pointer;
+      outline: none;
+      border: none;
+      font-size: 18px;
+      border-radius: 4px;
+      background: rgb(200,200,200);
+      padding: 6px 16px;
+      &:hover {
+        background: rgb(0,0,200);
+        color: rgb(255,255,255);
+      }
+    }
+
+  }
+  .field {
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    label {
+      font-weight: 600;
+    }
+    textarea {
+      outline: none;
+      padding: 8px;
+      border: solid 1px rgb(160,160,160);
+      min-height: 5em;
+    }
+    select,
+    input[type='text'] {
+      outline: none;
+      padding: 8px;
+      border: solid 1px rgb(160,160,160);
+    }
+    &.checkbox  {
+      flex-direction: row;
+      label { order: 2 }
+      input { order: 1; padding: 8px; width: 16px; height: 16px; }
+    }
+  }
+  .choices {
+    .admin_choice_form_item {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+    .choice_wrap {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      gap: 8px;
+      input[type='text'] {
+        flex-grow: 1;
+      }
+      .bttn { 
+        height: 35px; 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .field {
+        flex-grow: 1;
+      }
+    }
+  }
+}
